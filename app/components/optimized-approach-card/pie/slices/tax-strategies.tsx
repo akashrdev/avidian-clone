@@ -13,12 +13,12 @@ export const TaxStrategiesSlice = ({ isActive, onSelect }: SliceProps) => {
         stroke={color}
         strokeWidth={isActive ? 24 : 0}
         strokeLinejoin="round"
-        className="transition-all duration-300 group-hover:stroke-24"
+        className="transition-all duration-250 group-hover:stroke-24"
       />
       <text
         x={170}
         y={440}
-        fill="white"
+        fill={isActive ? "white" : "#C9DAEB"}
         fontSize="20"
         fontWeight="600"
         className="pointer-events-none select-none"
@@ -28,7 +28,7 @@ export const TaxStrategiesSlice = ({ isActive, onSelect }: SliceProps) => {
       <text
         x={142}
         y={466}
-        fill="white"
+        fill={isActive ? "white" : "#C9DAEB"}
         fontSize="20"
         fontWeight="600"
         className="pointer-events-none select-none"

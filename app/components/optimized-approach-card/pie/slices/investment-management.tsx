@@ -16,12 +16,12 @@ export const InvestmentManagementSlice = ({
         stroke={color}
         strokeWidth={isActive ? 24 : 0}
         strokeLinejoin="round"
-        className="transition-all duration-300 group-hover:stroke-24"
+        className="transition-all duration-250 group-hover:stroke-24"
       />
       <text
         x={260}
         y={84}
-        fill="white"
+        fill={isActive ? "white" : "#C9DAEB"}
         fontSize="20"
         fontWeight="600"
         className="pointer-events-none select-none"
@@ -31,7 +31,7 @@ export const InvestmentManagementSlice = ({
       <text
         x={250}
         y={110}
-        fill="white"
+        fill={isActive ? "white" : "#C9DAEB"}
         fontSize="20"
         fontWeight="600"
         className="pointer-events-none select-none"

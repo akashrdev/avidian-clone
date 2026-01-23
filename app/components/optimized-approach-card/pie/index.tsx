@@ -21,12 +21,10 @@ export const ACTIVE_COLOR = "#19825A";
 export const Pie = ({ selectedSection, setSelectedSection }: PieProps) => {
   return (
     <svg
-      width="609"
-      height="605"
       viewBox="0 0 609 605"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="overflow-visible"
+      className="overflow-visible w-full h-auto max-w-[50%]"
     >
       <InvestmentManagementSlice
         isActive={selectedSection === SECTIONS.InvestmentManagement}

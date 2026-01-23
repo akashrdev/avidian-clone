@@ -104,7 +104,7 @@ export const OptimizedApproachCard = () => {
   );
 
   return (
-    <div className="overflow-visible bg-neutral-blue flex flex-col gap-16.75 py-25 px-38.25 items-center w-full">
+    <div className="overflow-visible bg-neutral-blue flex flex-col gap-16.75 py-25 px-[clamp(2rem,7vw,9.5rem)]  items-center w-full">
       <div className="flex flex-col gap-9 max-w-166.25">
         <h2 className="leading-[130%] tracking-[-0.04em] font-semibold text-[39px] text-center">
           Our Full-Circle Approach to Wealth Management
@@ -137,7 +137,7 @@ export const OptimizedApproachCard = () => {
           );
         })}
       </div>
-      <div className="flex justify-between w-full">
+      <div className="flex justify-between max-w-283.25 w-full">
         <Pie
           selectedSection={selectedSection.id}
           setSelectedSection={(id) => {
@@ -145,8 +145,8 @@ export const OptimizedApproachCard = () => {
             if (section) setSelectedSection(section);
           }}
         />
-        <div className="flex pt-23 flex-col w-107.75 gap-9">
-          <h3 className="font-semibold leading-[130%] tracking-[-0.04em] text-[31px] wrap-break-word">
+        <div className="flex flex-col w-107.75 gap-9">
+          <h3 className="font-semibold leading-[130%] tracking-[-0.04em] text-[clamp(25px,2.25vw,35px)] wrap-break-word">
             {selectedSection.title}
           </h3>
           <div className="flex flex-col gap-6">
